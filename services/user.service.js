@@ -14,7 +14,6 @@ service.getById = getById;
 service.create = create;
 service.update = update;
 service.delete = _delete;
-service.about = about;
 
 module.exports = service;
 
@@ -52,10 +51,6 @@ function getById(_id) {
     });
 
     return deferred.promise;
-}
-
-function about() {
-    return "Versão 1.0.0.1";
 }
     
 function create(userParam) {
