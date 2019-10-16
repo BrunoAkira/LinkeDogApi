@@ -3,7 +3,7 @@ var config = require('config');
 var router = express.Router();
 
 // routes
-router.get('/', about);
+router.get('/about', about);
 
 module.exports = router;
 
